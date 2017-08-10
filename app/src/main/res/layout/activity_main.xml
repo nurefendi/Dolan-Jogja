@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/bgLogin"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="me.masfendi.dolanjogja.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:srcCompat="@mipmap/logomdpi"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp" />
+
+    <EditText
+        android:id="@+id/txtUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bginputlogin"
+        android:ems="10"
+        android:hint="Username: admin"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textColorHint="#646464"
+        android:layout_marginTop="175dp"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/txtPasword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bginputlogin"
+        android:ems="10"
+        android:hint="Password: Admin"
+        android:textColorHint="#646464"
+        android:padding="5dp"
+        android:inputType="textPassword"
+        android:textColor="#fff"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/txtUser"
+        android:layout_alignStart="@+id/txtUser"
+        android:layout_alignEnd="@+id/txtUser" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login!"
+        android:layout_marginTop="23dp"
+        android:background="@color/colorAccent"
+        android:layout_below="@+id/txtPasword"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
